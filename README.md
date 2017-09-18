@@ -64,6 +64,12 @@ Almost all distrobutions of linux have the python 3 options available in their r
 * `sudo apt-get install python3`
 * `sudo apt-get install python3-pip`
 
+### Libraries to install
+* `pip install django`
+* `pip install requests`
+* `pip install virtualenv`
+* `pip install jupyter`
+
 ### Pycharm
 Pycharm is one of the most powerful IDEs for python.  It is created by JetBrains who create IntelliJ for java.  We will be using it in class if possible to make things easier and give some autocomplete suggestions.  For this class it is recommended that you download the Professional Edition but the Community Edition is free and will still work just fine.
 
