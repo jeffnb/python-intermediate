@@ -33,7 +33,7 @@ You only need to do this if you decided to go without Homebrew
 
 Windows takes a bit work to get python up and running correctly.  Once running it should be able to be used quickly going forward 
 
-*Note*: Windows 10 allows for a built-in Ubuntu linux image that greatly enhances the power of Windows for development.  These instructions will get you started: https://www.windowscentral.com/how-install-linux-distros-windows-10
+*Note*: Windows 10 allows for a built-in Ubuntu linux image that greatly enhances the power of Windows for development.  This process is not required for the class but does have benefits to look into later.  These instructions will get you started: https://www.windowscentral.com/how-install-linux-distros-windows-10
 
 #### Python Install
 * Download the installer for python from here: https://www.python.org/downloads/release/python-362/
@@ -64,7 +64,16 @@ Almost all distrobutions of linux have the python 3 options available in their r
 * `sudo apt-get install python3`
 * `sudo apt-get install python3-pip`
 
+### Pip Proxy for Visa
+Visa's firewall may block your attempts to do pip package installs.  To get around this issue the following steps can be attempted:
+* `SET HTTPS_PROXY=userproxy.visa.com:8080`
+* `SET HTTP_PROXY=userproxy.visa.com:80`
+* `pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org jupyter`
+* `pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org virtualenv`
+* `pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org django` 
+
 ### Libraries to install
+Do not perform these steps if you performed the steps above in the Pip Proxy for Visa section
 * `pip install django`
 * `pip install requests`
 * `pip install virtualenv`
